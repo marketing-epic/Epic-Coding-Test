@@ -1,0 +1,32 @@
+.footer{
+    .main-logo{
+        width: 150px;
+        text-align: center;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    
+    .footer-menu{
+        list-style-type: none;
+        li a{
+            color: $white;
+        }
+        
+    }
+    
+    
+    @include media-breakpoint-up(lg){
+        .main-logo{
+            padding: 10px 20px 0 100px;
+        }
+        .footer-menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            li a{
+                padding: 10px 30px;
+            }
+        }
+    }
+}

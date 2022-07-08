@@ -1,0 +1,36 @@
+#main-nav{
+    .main-logo{
+        width: 150px;
+    }
+    .main-phone{
+        color: $black;
+        word-wrap: none;
+    }
+    .navbar-top {
+        font-size: 10px;
+    }
+    .hamburger{
+        padding: 10px;
+        i{
+            font-size: 30px;
+            // line-height: 20px;
+        }
+    }
+    
+    
+    @include media-breakpoint-up(lg){
+        .navbar-top{
+            font-size: 16px;
+        }
+        .navbar{
+            .navbar-nav{
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row;
+                .menu-item{
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+}
