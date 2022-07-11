@@ -13,11 +13,15 @@ Your task is to program the Contact Form and Location section from this design c
 We have provided a starter WordPress site that has the header and footer already complete. 
 
 ### Get Started:
-1. Navigate to epicvue/wp-content/themes/epicvue and run `npm install`
-2. Start Browsersync by running `npm start` or do a on-demand compile of your SASS with `npm run build`
-3. Create a new MySql Database.
-4. Import the .sql file into your new local database.
-5. Run through The Famous Wordpress 5-minute installer.
+1. Create a new MySql Database.
+2. Import the .sql file into your new local database.
+3. Create a wp-config.php file with your database credentials
+4. Navigate to epicvue/wp-content/themes/epicvue and run `npm install`
+5. Start Browsersync by running `npm start` or do a on-demand compile of your SASS with `npm run build`
+
+There is already a admin account set up that you can use to sign into the CMS:
+Username: epic
+Password: EpicProgrammers
 
 Please let us know if you have any issues getting set up.
 
