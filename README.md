@@ -20,7 +20,9 @@ We have provided a starter WordPress site that has the header and footer already
 5. Start Browsersync by running `npm start` or do a on-demand compile of your SASS with `npm run build`
 
 There is already a admin account set up that you can use to sign into the CMS:
+
 Username: epic
+
 Password: EpicProgrammers
 
 Please let us know if you have any issues getting set up.
