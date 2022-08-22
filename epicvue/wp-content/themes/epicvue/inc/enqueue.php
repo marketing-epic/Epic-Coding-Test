@@ -11,7 +11,10 @@ function epicpress_scripts() {
 	// wp_enqueue_style( 'owlCarousel2', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '2.3.4', 'all' );
 
 	/*------Site Styles ----*/
-	wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/dist/css/app.css' , array(), $css_version );
+	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' , array(), '4.6.2' );
+	
+	wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/css/global.css' , array(), $css_version );
+	wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/css/contact.css' , array(), $css_version );
 	wp_style_add_data( 'main-style', 'rtl', 'replace' );
 	
 	
@@ -23,26 +26,8 @@ function epicpress_scripts() {
 	
 	
 	/*------Site Scripts ----*/
-	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/dist/js/app.js', array(), $js_version, true );
-	
-	
-	/**** Global PHP and JS variables ****/
-	global $post;
-	$post_name = $post!=null ? $post->post_name : '';
-	define( 'BP_MEDIUM', '768');
-	define( 'BP_LARGE', '1440');
-	
-	wp_localize_script('main-scripts', 'site', array( 	//i.e. <script> ajaxurl=site.ajax_url </script>
-		'theme_url' => get_template_directory_uri(),
-		'post_name' => $post_name,
-		'ajax_url' => admin_url("admin-ajax.php"),
-		'bp_md'	=> BP_MEDIUM,
-		'bp_lg'	=> BP_LARGE,
-	));
-	
-	
-	/**** Owl Carousel Script ****/
-	// wp_enqueue_script( 'owl-carousel-2', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), '2.3.4', false );
+	wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/js/app.js', array(), $js_version, true );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'epicpress_scripts' );

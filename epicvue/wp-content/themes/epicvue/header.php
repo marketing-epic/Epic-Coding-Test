@@ -33,10 +33,10 @@ $site_phone_two = get_field('site_phone_two', 'option');
 
 			<nav id="main-nav" class="navbar-light " aria-labelledby="main-nav-label">
 				<h2 id="main-nav-label" class="sr-only"><?php esc_html_e('Main Navigation'); ?></h2>
-				<div class="container w-100 pt-20">
-					<div class="navbar-top d-flex justify-content-center justify-content-lg-end mb-10 pr-20">
-						Sales: <a class="main-phone" href="tel:<?php echo $site_phone ?>"><?php echo $site_phone ?> </a> <span class="px-10 px-lg-20">|</span>
-						Driver Support: <a class="main-phone" href="tel:<?php echo $site_phone_two ?>"><?php echo $site_phone_two ?></a>
+				<div class="container nav-container w-100">
+					<div class="navbar-top d-flex justify-content-center justify-content-lg-end">
+						Sales: <a class="main-phone" href="tel:<?php echo $site_phone ?>"> <?php echo $site_phone ?> </a> <span class="seperator">|</span>
+						Driver Support: <a class="main-phone" href="tel:<?php echo $site_phone_two ?>"> <?php echo $site_phone_two ?></a>
 					</div>
 					<div class="navbar-bottom w-100 d-flex justify-content-between align-content-center">
 						<div class="navbar-left d-flex align-items-center">
